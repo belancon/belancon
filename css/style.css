@@ -1,0 +1,137 @@
+/*GLOBAL COLOR*/
+.blue-color {
+	color: #3498db;
+}
+/*GLOBAL COLOR*/
+
+.total-icons-keranjang {
+	background: #e74c3c;
+	padding: 5px;
+	border-radius: 50%;
+	font-size: 10px;
+	color: white;
+	position: absolute;
+	z-index: 12;
+	right: 10px;
+	top: 20px;
+}
+
+.icon-keranjang {
+	float: left;
+	margin: 10px;
+}
+
+.remove-item-keranjang {
+	padding-top: 17px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 500px;
+    overflow-x: hidden;
+}
+
+#header {
+	background: #3498db;
+	background-image: url('../img/bg_header_2.png');
+	padding-bottom: 80px;
+}
+
+	#header .navbar-default {
+		background: #3498db;
+		border: 0;
+		border-radius: 0;
+	}
+
+		#header .navbar-default .navbar-brand {
+			color: white;
+		}
+
+		#header .navbar-default .navbar-right .fa-shopping-basket {
+			color: white;
+		}
+
+		#header .navbar-default .navbar-right .dropdown-toggle:focus,
+		#header .navbar-default .navbar-right .dropdown-toggle:visited 
+		 {
+			background: #237ab5;
+		}
+
+.dropdown-keranjang {
+	width: 300px;
+}
+
+	.dropdown-keranjang .download-all-icons:hover {
+		text-decoration: underline;
+	}
+
+#home-icons {
+	padding-bottom: 50px;
+}
+
+#home-icons .download-icon {
+	padding: 10px;
+	background: #3498db;
+	border-radius: 30px;
+	position: absolute;
+	z-index: 2;
+	left: 78px;
+	top: 20px;
+	cursor: pointer;
+	transition: all 1s;
+	opacity: 0;
+}
+
+#home-icons .download-icon:hover {
+	-webkit-box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
+	box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);	
+	transition: all 1s;
+}
+
+#home-icons .download-icon a {
+	color: white;
+}
+
+#home-icons .icon-item {
+	margin-bottom: 80px;
+}
+
+#home-icons .icon-item:hover > .download-icon {
+	opacity: 1;
+}
+
+.form-search-icon {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+	.form-search-icon h1:first-child {
+		color: white;
+	}
+
+	.form-search-icon #search-icon {
+		border-radius: 20px 0 0 20px;
+		width: 500px;
+	}
+
+	.form-search-icon #submit-search-icon {
+		border-radius: 0 20px 20px 0;
+		margin-left: -4px;
+	}
+
+	.form-search-icon .col-md-6:first-child {
+		/*margin-top: 50px;*/
+	}
+
+#footer {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background: #3498db;
+	color: white;
+}
+
+
+
+
+

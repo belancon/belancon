@@ -1,0 +1,15 @@
+## 	Beta Version
+
+## 	Belancon.com
+	Sebuah website yang menyediakan icon-icon untuk kebutuhan desain website, aplikasi, print-out, dan lain-lain. Icon-icon pada Belancon ini memiliki kategori yang berbeda-beda, yakni Gratis dan juga ada yang berbayar.
+
+##	Funsionalitas
+	1. User dapat meng-unduh semua Icons pada Belancon.com tanpa harus login / register terlebih dahulu
+	2. User dapat mencari Icon apa saja yang dibutuhkannya
+	3. User dapat memilih jenis type Icon yang akan di-download (.PSD/.Ai/.PNG)
+
+##	Element yang dibutuhkan
+	1. Keranjang pada website
+	2. Form search untuk user mencari Icon
+	3. Home Page, Result Page, Dashboard Admin Page (CMS)
+	4. Modal Large untuk View Icon
