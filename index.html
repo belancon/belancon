@@ -59,15 +59,27 @@
                 </a>
                 <ul class="dropdown-keranjang dropdown-menu scrollable-menu">
                   <li>
-                    <div id="shoppingCart">
-                    </div>
-                    <div class="clearfix">
-                    </div>
+                    <img src="img/user-1.png" alt="">
+                    <span>
+                      <a href="#" class="black-color"><i class="green-color fa fa-trash"></i> Hapus</a>
+                    </span>
+                  </li>
+                  <li>
+                    <img src="img/dummy-icon.png" alt="">
+                    <span>
+                      <a href="#" class="black-color"><i class="green-color fa fa-trash"></i> Hapus</a>
+                    </span>
+                  </li>
+                  <li>
+                    <img src="img/user-2.png" alt="">
+                    <span>
+                      <a href="#" class="black-color"><i class="green-color fa fa-trash"></i> Hapus</a>
+                    </span>
                   </li>
                   <li class="divider"></li>
                   <li style="padding-top: 20px; padding-bottom: 30px;">
-                    <a class="download-all-icons" style="color: #3498db; cursor: pointer; background: none;" onclick="downloadAll();">
-                    <span class="glyphicon glyphicon-save" aria-hidden="true"></span> Download all Icons
+                    <a href="cart.html">
+                    <span class="green-color glyphicon glyphicon-save" aria-hidden="true"></span> Download all Icons
                     </a>
                   </li>
                 </ul>
@@ -79,14 +91,14 @@
 
       <div class="container form-search-icon">
         <div class="row">
-          <div class="col-md-12" style="margin-bottom: 30px;">
+          <div class="col-md-12" style="margin-bottom: 30px; margin-top: 50px;">
             <h1 class="text-center">
-              12,500 Icons are Available
+              Tersedia lebih dari 17,969
             </h1>
           </div>
           <div class="col-md-6 col-md-offset-3">
             <div class="text-center">
-              <form class="form-inline">
+              <form class="form-inline" action="result.html">
                 <div class="form-group">
                   <input type="text" class="form-control col-md-6" id="search-icon" placeholder="Search icon ...">
                 </div>
@@ -102,15 +114,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="text-center blue-color" style="margin-bottom: 20px;">
-              Download Icons for your Design Asset
+            <h2 class="text-center green-color" style="margin-bottom: 20px;">
+              Icons untuk Kebutuhan Desain Anda
             </h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <p class="text-center">
-              You can download Icons easily, just add Icons to cart and you can multiple download Icons. All of Icons is 512px and .PNG version.
+            <p class="text-center black-color">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
@@ -123,8 +136,6 @@
                   <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#terbaru" aria-controls="terbaru" role="tab" data-toggle="tab">Terbaru</a></li>
                     <li role="presentation"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Popular</a></li>
-                    <li role="presentation"><a href="#free" aria-controls="free" role="tab" data-toggle="tab">Free</a></li>
-                    <li role="presentation"><a href="#paid" aria-controls="paid" role="tab" data-toggle="tab">Paid</a></li>
                   </ul>
                 </div>
               </div>
@@ -134,346 +145,45 @@
                   <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="terbaru">
 
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
+                      <div class="modal fade modal-view-icon" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="text-center">
+                              <img src="img/user-1.png" />
+                            </div>
+                          </div>
                         </div>
                       </div>
 
                       <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
                         <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
+                          <a href="#"><i class="fa fa-shopping-basket"></i></a>
+                          <!-- menu trash / delete -->
+                          <!-- <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-trash"></i></a> -->
+                        </span>
+                        <span class="view-icon">
+                          <a data-toggle="modal" data-target=".modal-view-icon" href="#"><i class="fa fa-eye fa-lg"></i></a>
                         </span>
                         <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="A Icon" data-id="a" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-3.png" height="80" id="a" data-icon-type="aa" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="A Icon" data-id="a" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-3.png" height="80" id="a" data-icon-type="aa" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="A Icon" data-id="a" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-3.png" height="80" id="a" data-icon-type="aa" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="A Icon" data-id="a" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-3.png" height="80" id="a" data-icon-type="aa" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
+                          <img src="img/user-1.png" id="c" class="img-prev" />
                         </div>
                       </div>
 
                     </div>
 
                     <div role="tabpanel" class="tab-pane" id="popular">
-                      
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="A Icon" data-id="a" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-3.png" height="80" id="a" data-icon-type="aa" />
-                        </div>
-                      </div>
 
                       <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
                         <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="A Icon" data-id="a" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
+                          <a href="#"><i class="fa fa-shopping-basket"></i></a>
+                          <!-- menu trash / delete -->
+                          <!-- <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-trash"></i></a> -->
+                        </span>
+                        <span class="view-icon">
+                          <a onclick="alert('Pakai modal juga seperti yang lainnya ...'); return false;" href="#"><i class="fa fa-eye fa-lg"></i></a>
                         </span>
                         <div class="text-center img-icon">
-                          <img src="img/user-3.png" height="80" id="a" data-icon-type="aa" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="free">
-                      
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="A Icon" data-id="a" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-3.png" height="80" id="a" data-icon-type="aa" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
-                        </div>
-                      </div>
-
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="paid">
-                      
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="A Icon" data-id="a" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-3.png" height="80" id="a" data-icon-type="aa" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="B Icon" data-id="b" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-2.png" height="80" id="b" data-icon-type="bb" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="C Icon" data-id="c" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-1.png" height="80" id="c" data-icon-type="cc" />
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 col-xs-4 col-sm-3 icon-item">
-                        <span class="download-icon">
-                          <a onclick="addToCart(this); return false;" data-name="D Icon" data-id="d" href="javascript:void(0)"><i class="fa fa-shopping-basket"></i></a>
-                        </span>
-                        <div class="text-center img-icon">
-                          <img src="img/user-4.png" height="80" id="d" data-icon-type="dd" />
+                          <img src="img/user-1.png" class="img-prev" />
                         </div>
                       </div>
 
@@ -484,6 +194,36 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="text-center">
+              <a href="javascript:void(0)" class="btn btn-primary btn-load-more">LOAD MORE</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/about.png" class="img-responsive" alt="">
+          </div>
+          <div class="col-md-6">
+            <h2 class="green-color" style="margin-top: 150px; margin-bottom: 30px;">
+              Apa itu Belancon.com ?
+            </h2>
+            <p style="line-height: 1.6;">
+              Sebuah website yang menyediakan icon-icon untuk kebutuhan desain website, aplikasi, print-out, dan lain-lain. Icon-icon pada Belancon ini memiliki kategori yang berbeda-beda, yakni Gratis dan juga ada yang berbayar.
+            </p>
+            <p style="margin-top: 30px;">
+              <a href="mailto:anggariskysetiawan@gmail.com" class="btn btn-primary btn-contributor">Join as Contributor</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -492,10 +232,10 @@
           <div class="row">
             <div class="col-md-12">
               <p class="pull-left">
-                Copyright 2016 Belancon | Develop by Angga Risky
+                Copyright 2016 Belancon
               </p>
               <p class="pull-right">
-                Supported by Rizqi Maulana & Galih Pratama
+                Developed by Belancon's Team
               </p>
             </div>
           </div> 
@@ -506,7 +246,7 @@
     <script src="js/jquery-1.12.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/sweetalert.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script src="js/script.js"></script> -->
   </body>
 </html>

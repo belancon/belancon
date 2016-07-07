@@ -1,11 +1,40 @@
+a {
+	color: #66AE53;
+}
 /*GLOBAL COLOR*/
 .blue-color {
 	color: #3498db;
 }
+.green-color {
+	color: #66AE53;
+}
+.black-color {
+	color: #3d3938;
+}
+.yellow-color {
+	color: #fdaa3e;
+}
 /*GLOBAL COLOR*/
 
+.table-cart-icon td {
+	vertical-align: middle !important;
+}
+
+.table-cart-icon tbody td img {
+	border-radius: 3px;
+	height: 40px;
+	width: 40px;
+}
+
+.modal-view-icon {
+	background: none;
+	box-shadow: 0 !important;
+	-webkit-box-shadow: 0 !important;
+	border: 0;
+}
+
 .total-icons-keranjang {
-	background: #e74c3c;
+	background: #fdaa3e;
 	padding: 5px;
 	border-radius: 50%;
 	font-size: 10px;
@@ -31,14 +60,20 @@
     overflow-x: hidden;
 }
 
+.img-icon img{
+	width: 80px;
+	height: 80px;
+	border-radius: 3px;
+}
+
 #header {
-	background: #3498db;
-	background-image: url('../img/bg_header_2.png');
+	background: #66AE53;
+	background-image: url('../img/bg_header.png');
 	padding-bottom: 80px;
 }
 
 	#header .navbar-default {
-		background: #3498db;
+		background: #3d3938;
 		border: 0;
 		border-radius: 0;
 	}
@@ -54,12 +89,18 @@
 		#header .navbar-default .navbar-right .dropdown-toggle:focus,
 		#header .navbar-default .navbar-right .dropdown-toggle:visited 
 		 {
-			background: #237ab5;
+			background: #66AE53;
 		}
 
 .dropdown-keranjang {
-	width: 300px;
+	width: 180px;
 }
+
+	.dropdown-keranjang li img {
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+	}
 
 	.dropdown-keranjang .download-all-icons:hover {
 		text-decoration: underline;
@@ -70,26 +111,46 @@
 }
 
 #home-icons .download-icon {
-	padding: 10px;
-	background: #3498db;
-	border-radius: 30px;
+	padding: 6px;
+	width: 20%;
+	background: #3d3938;
+	border-radius: 10px 10px 0 0;
 	position: absolute;
 	z-index: 2;
-	left: 78px;
-	top: 20px;
+	top: 5px;
+	left: 76px;
 	cursor: pointer;
 	transition: all 1s;
 	opacity: 0;
+	text-align: center;
 }
 
-#home-icons .download-icon:hover {
+#home-icons .view-icon {
+	padding: 6px;
+	width: 20%;
+	background: #3d3938;
+	border-radius: 0 0 10px 10px;
+	position: absolute;
+	z-index: 3;
+	bottom: 5px;
+	left: 76px;
+	cursor: pointer;
+	transition: all 1s;
+	opacity: 0;
+	text-align: center;
+}
+
+#home-icons .download-icon:hover,
+#home-icons .view-icon:hover {
 	-webkit-box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
 	box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);	
 	transition: all 1s;
+	background: #66AE53;
 }
 
-#home-icons .download-icon a {
+#home-icons .download-icon a,
+#home-icons .view-icon a{
 	color: white;
 }
 
@@ -97,7 +158,8 @@
 	margin-bottom: 80px;
 }
 
-#home-icons .icon-item:hover > .download-icon {
+#home-icons .icon-item:hover > .download-icon,
+#home-icons .icon-item:hover > .view-icon {
 	opacity: 1;
 }
 
@@ -124,10 +186,66 @@
 		/*margin-top: 50px;*/
 	}
 
+.btn-load-more {
+	background: none;
+	border: dashed 1px #66AE53;
+	color: #66AE53;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 11px;
+	border-radius: 3px;
+	transition: all 1s;
+}
+
+.btn-load-more:hover {
+	background: #66AE53;
+	color: white;
+	transition: all 1s;
+	border: 1px solid #66AE53;
+	-webkit-box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
+	box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
+}
+
+.btn-load-more:visited,
+.btn-load-more:focus {
+	background: #66AE53;
+	color: white;
+	transition: all 1s;
+	border: 1px solid #66AE53;
+}
+
+.btn-contributor {
+	background: #66AE53;;
+	color: white;
+	transition: all 1s;
+	border: 0;
+	-webkit-box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
+	box-shadow: -1px 0px 20px -4px rgba(0,0,0,0.75);
+}
+
+.btn-contributor:hover {
+	background: #3d3938;
+	color: white;
+	transition: all 1s;
+}
+
+#about {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 2px #fdaa3e dashed;
+	border-top: 2px #fdaa3e dashed;
+}
+
 #footer {
-	padding-top: 30px;
-	padding-bottom: 20px;
-	background: #3498db;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background: #3d3938;
 	color: white;
 }
 
