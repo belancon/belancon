@@ -1,0 +1,8 @@
+.list-icon-tbl tbody td {
+	vertical-align: middle !important;
+}
+
+.list-icon-tbl td,
+.list-icon-tbl th {
+	text-align: center !important;
+}
