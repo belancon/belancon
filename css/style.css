@@ -12,23 +12,13 @@ fieldset[disabled] .btn-primary.focus {
 }
 
 .overlay-loader {
-	background: rgba(0,0,0,0);
+	background: rgba(0,0,0,0.5);
 	width: 100%;
 	height: 100%;
 	z-index: 10;
 	display: none;
 	position: absolute;
 	color: black;
-}
-
-.loader-animation {
-	width: 100px;
-	height: 60px;
-	background: red;
-	top: 100px;
-	left: 100px;
-	z-index: 20;
-	position: absolute;
 }
 
 a {

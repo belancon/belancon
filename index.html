@@ -141,10 +141,10 @@
                   </ul>
                 </div>
               </div>
-              <div class="row" id="home-loaded-overlay" class="home-icons-loaded">
+              <div class="row">
 
                 <div class="overlay-loader">
-
+                  
                 </div>
 
                 <div class="col-md-12">
@@ -256,20 +256,13 @@
     <!-- <script type="text/javascript" src="js/sweetalert.min.js"></script>
     <script src="js/script.js"></script> -->
 
-    <!-- Include the StyleSelect File -->
-    <script src="js/toggleLoading.jquery.js"></script>
-
     <script type="text/javascript">
       $(document).ready(function(){
 
           // Then call styleSelect on a select
-          $('#btn-load-more').click(function(e) {
-            $(this).button('loading');
-            $('.loading').css("background", "red");
-            $('.home-icons-loaded').toggleLoading({
-              addClass : "overlay-loader"
-            });
-            $('.overlay-loader').css("display", "block");
+          $('#btn-load-more').click(function() {
+            $('.overlay-loader').fadeIn(); // ketika loading
+            $('.overlay-loader').fadeOut(2000); // ketika selesai loading
           })
 
       });
