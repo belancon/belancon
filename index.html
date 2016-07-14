@@ -110,7 +110,9 @@
       </div>
     </div>
     
-    <div id="home-icons" style="padding-top: 50px;">
+    <div id="home-icons" class="" style="padding-top: 50px;">
+      
+
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -139,7 +141,12 @@
                   </ul>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" id="home-loaded-overlay" class="home-icons-loaded">
+
+                <div class="overlay-loader">
+
+                </div>
+
                 <div class="col-md-12">
                   <!-- Tab panes -->
                   <div class="tab-content">
@@ -198,7 +205,7 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <div class="text-center">
-              <a href="javascript:void(0)" class="btn btn-primary btn-load-more">LOAD MORE</a>
+              <a href="javascript:void(0)" id="btn-load-more" class="btn btn-primary btn-load-more">LOAD MORE</a>
             </div>
           </div>
         </div>
@@ -248,5 +255,25 @@
     <script src="js/bootstrap.js"></script>
     <!-- <script type="text/javascript" src="js/sweetalert.min.js"></script>
     <script src="js/script.js"></script> -->
+
+    <!-- Include the StyleSelect File -->
+    <script src="js/toggleLoading.jquery.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+          // Then call styleSelect on a select
+          $('#btn-load-more').click(function(e) {
+            $(this).button('loading');
+            $('.loading').css("background", "red");
+            $('.home-icons-loaded').toggleLoading({
+              addClass : "overlay-loader"
+            });
+            $('.overlay-loader').css("display", "block");
+          })
+
+      });
+    </script>
+
   </body>
 </html>
